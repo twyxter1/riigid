@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountryData</title>
+</head>
+<body>
+    <form action="/DataCountry" method="POST">
+        <select name="optionCountry" >
+            <option value="EST">ESTONIA</option>
+            <option value="LV">LATVIA</option>
+            <option value="LTV">LITHUAINA</option>
+        </select>
+        <button type="submit">Get Data</button>
+        <p><%= CountryData.name %></p>
+        <p><%= CountryData.LanguageEnglish %></p>
+        <p><%= CountryData.Domain %></p>
+        <p><%= CountryData.Capital %></p>
+        <p><%= CountryData.Region %></p>
+        <p><%= CountryData.Subregion %></p>
+        <p><%= CountryData.population %></p>
+        <p><%= CountryData.Timezone %></p>
+        <p><%= CountryData.LanguageEnglish %></p>
+        <p><%= CountryData.Currencyname %></p>
+        <p><%= CountryData.Currencysymbol %></p>
+       
+        <p><img style="height: 100px; width: 200px;" src="<%= CountryData.urlflag %>" alt="Lipp"></p>
+        
+        
+
+    </form>    
+</body>
+</html>
